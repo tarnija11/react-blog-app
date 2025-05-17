@@ -28,30 +28,7 @@ A full-stack blog application built with **React** (Vite + Tailwind CSS) on the 
 - MongoDB (Mongoose)
 
 ---
-
-## 📂 Project Structure
-blog-site/
-├── client/ # React frontend
-│ ├── src/
-│ │ ├── components/
-│ │ │ ├── BlogCard.jsx
-│ │ │ ├── BlogEditor.jsx
-│ │ │ ├── BlogHome.jsx
-│ │ │ └── Navbar.jsx
-│ │ └── App.jsx
-│ └── ...
-├── server/ # Express backend
-│ ├── models/
-│ │ └── Blog.js
-│ ├── routes/
-│ │ └── blogRoutes.js
-│ ├── middleware/
-│ │ └── auth.js
-│ ├── server.js
-│ └── .env
-└── README.md
-
----
+live demo: [https://react-blog-app-lovat.vercel.app/](https://react-blog-app-lovat.vercel.app/)
 
 ## ⚙️ Setup Instructions
 
