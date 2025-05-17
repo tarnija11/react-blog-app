@@ -7,7 +7,7 @@ export default function BlogHome() {
   const [blogs, setBlogs] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:5000/api/blogs')
+    axios.get('react-cart-app-production.up.railway.app/api/blogs')
       .then(res => {
         setBlogs(res.data);
       })

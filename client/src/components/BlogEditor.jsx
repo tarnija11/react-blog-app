@@ -13,7 +13,7 @@ const BlogEditor = () => {
 
   useEffect(() => {
     if (id) {
-      axios.get(`http://localhost:5000/api/blogs/${id}`)
+      axios.get(`react-cart-app-production.up.railway.app/api/blogs/${id}`)
         .then(res => {
           const blog = res.data;
           setTitle(blog.title);
@@ -38,10 +38,10 @@ const BlogEditor = () => {
 
     try {
       if (id) {
-        await axios.put(`http://localhost:5000/api/blogs/${id}`, payload);
+        await axios.put(`react-cart-app-production.up.railway.app/api/blogs/${id}`, payload);
         showMessage('Draft updated successfully');
       } else {
-        await axios.post('http://localhost:5000/api/blogs/save-draft', payload);
+        await axios.post('react-cart-app-production.up.railway.app/api/blogs/save-draft', payload);
         showMessage('Draft saved successfully');
       }
     } catch (err) {
@@ -59,10 +59,10 @@ const BlogEditor = () => {
 
     try {
       if (id) {
-        await axios.put(`http://localhost:5000/api/blogs/${id}/publish`, payload);
+        await axios.put(`react-cart-app-production.up.railway.app/api/blogs/${id}/publish`, payload);
         showMessage('Blog published successfully');
       } else {
-        await axios.post('http://localhost:5000/api/blogs/publish', payload);
+        await axios.post('react-cart-app-production.up.railway.app/api/blogs/publish', payload);
         showMessage('Blog published successfully');
       }
 

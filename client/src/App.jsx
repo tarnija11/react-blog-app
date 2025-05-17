@@ -2,7 +2,6 @@ import './App.css'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import BlogEditor from './components/BlogEditor';
 import BlogHome from './components/BlogHome';
-import EditBlog from './components/EditBlog';
 import Drafts from './components/Drafts';
 
 function App() {

@@ -9,7 +9,7 @@ const EditBlog = () => {
   const [tags, setTags] = useState('');
 
   useEffect(() => {
-    axios.get(`http://localhost:5000/api/blogs/${id}`).then(res => {
+    axios.get(`react-cart-app-production.up.railway.app/api/blogs/${id}`).then(res => {
       const blog = res.data;
       setTitle(blog.title);
       setContent(blog.content);
@@ -18,7 +18,7 @@ const EditBlog = () => {
   }, [id]);
 
   const saveChanges = async () => {
-    await axios.post('http://localhost:5000/api/blogs/save-draft', {
+    await axios.post('react-cart-app-production.up.railway.app/api/blogs/save-draft', {
       id,
       title,
       content,
@@ -27,7 +27,7 @@ const EditBlog = () => {
   };
 
   const publishPost = async () => {
-    await axios.post('http://localhost:5000/api/blogs/publish', {
+    await axios.post('react-cart-app-production.up.railway.app/api/blogs/publish', {
       id,
       title,
       content,

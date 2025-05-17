@@ -7,7 +7,7 @@ export default function DraftsPage() {
   const [drafts, setDrafts] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:5000/api/blogs')
+    axios.get('react-cart-app-production.up.railway.app/api/blogs')
       .then(res => {
         const draftBlogs = res.data.filter(blog => blog.status === 'draft');
         setDrafts(draftBlogs);
