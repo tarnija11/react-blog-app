@@ -27,7 +27,7 @@ const EditBlog = () => {
   };
 
   const publishPost = async () => {
-    await axios.post('react-cart-app-production.up.railway.app/api/blogs/publish', {
+    await axios.post('https://react-cart-app-production.up.railway.app/api/blogs/publish', {
       id,
       title,
       content,
